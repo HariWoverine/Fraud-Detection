@@ -1,5 +1,11 @@
 # Fraud-Detection
 
+Please find the following descriptions for each files
+
+# Task
+1. **Assessment.ipynb** - Exploratory Data Analysis, Data preparation, making pipeline, Modeling building, model validation, Bonus 1 (model deployment using Flask API), Bonus 2 (unsupervised learning).
+2. **APPLICATION ASSESSMENT.docx** - 1-page report summarizing my approach and results.
+
 # Bonus 1
 ## Model deployment in Flast API
 1. **app.py**: This is the main file for receiving required information for Fraud detection through GUI or API calls and computing the Fraud detection using XGBoost Classifier and returning it.
