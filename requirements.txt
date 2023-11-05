@@ -1,0 +1,4 @@
+flask==2.2.3
+pickle==4.0
+numpy==1.23.2
+pandas==1.4.3
