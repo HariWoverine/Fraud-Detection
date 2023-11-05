@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .form-group {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .form-group h3 {
+            text-align: center;
+        }
+        .form-group input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body background="https://www.mastercard.com/content/dam/public/brandcenter/en/Logo-1.5x.png">
+<div class="login">
+    <h1 style="text-align:center">Fraud Detection</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+        <div class="form-group">
+            <h3>anomaly_feat_0</h3>
+            <input type="text" name="anomaly_feat_0" value="TRUE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>anomaly_feat_1</h3>
+            <input type="text" name="anomaly_feat_1" value="TRUE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>anomaly_feat_2</h3>
+            <input type="text" name="anomaly_feat_2" value="TRUE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>anomaly_feat_3</h3>
+            <input type="text" name="anomaly_feat_3" value="FALSE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_0</h3>
+            <input type="number" name="count_feat_0" value="2" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_1</h3>
+            <input type="number" name="count_feat_1" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_2</h3>
+            <input type="number" name="count_feat_2" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_3</h3>
+            <input type="number" name="count_feat_3" value="1" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_4</h3>
+            <input type="number" name="count_feat_4" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_5</h3>
+            <input type="number" name="count_feat_5" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_6</h3>
+            <input type="number" name="count_feat_6" value="4004" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_7</h3>
+            <input type="number" name="count_feat_7" value="2916" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_8</h3>
+            <input type="number" name="count_feat_8" value="27" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_9</h3>
+            <input type="number" name="count_feat_9" value="4" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_10</h3>
+            <input type="number" name="count_feat_10" value="4" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_11</h3>
+            <input type="number" name="count_feat_11" value="4" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_12</h3>
+            <input type="number" name="count_feat_12" value="2" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_13</h3>
+            <input type="number" name="count_feat_13" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_14</h3>
+            <input type="number" name="count_feat_14" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_15</h3>
+            <input type="number" name="count_feat_15" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_16</h3>
+            <input type="number" name="count_feat_16" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>count_feat_17</h3>
+            <input type="number" name="count_feat_17" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>interaction_feat_0</h3>
+            <input type="text" name="interaction_feat_0" value="TRUE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>interaction_feat_1</h3>
+            <input type="text" name="interaction_feat_1" value="FALSE" required="required">
+        </div>
+        <div class="form-group">
+            <h3>interaction_feat_2</h3>
+            <input type="number" name="interaction_feat_2" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>interaction_feat_3</h3>
+            <input type="number" name="interaction_feat_3" value="0" required="required">
+        </div>
+        <div class="form-group">
+            <h3>timestamp</h3>
+            <input type="number" name="timestamp" value="26470" required="required">
+        </div>
+        <div class="form-group">
+            <h3>accountid</h3>
+            <input type="text" name="accountid" value="bf27b3da-83e8-4ba8-b1a2-20839a767906" required="required">
+        </div>
+        <div class="form-group">
+            <h3>device_feat_1</h3>
+            <input type="text" name="device_feat_1" value="browser_16" required="required">
+        </div>
+        <div class="form-group">
+            <h3>device_feat_2</h3>
+            <input type="text" name="device_feat_2" value="device_5695" required="required">
+        </div>
+        <h2 style="text-align:center;"></h2>
+        <p style="text-align:center;">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Fraudulent or not</button>
+        </p>
+    </form>
+    <h2 style="text-align:center;">{{ prediction_text }}</h2>
+</div>
+</body>
+</html>
