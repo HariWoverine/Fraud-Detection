@@ -1,5 +1,6 @@
 # Fraud-Detection
 
+# Bonus 1
 ## Model deployment in Flast API
 1. **app.py**: This is the main file for receiving required information for Fraud detection through GUI or API calls and computing the Fraud detection using XGBoost Classifier and returning it.
 2. **index.html**- Template folder: This folder contains an HTML template for user input, based on which the model will make Fraud predictions.
@@ -24,3 +25,5 @@ python app.py
 
 ## SNIPPETS OF THE MODEL AS API IS SHOWN BELOW
 [bonus1_api.png](https://github.com/HariWoverine/Fraud-Detection/blob/main/bonus1_api.png)
+
+
